@@ -9,6 +9,8 @@ footer {
   bottom: 1%;
   text-align: center;
   left: 40%;
+  justify-self: center;
+  align-self: flex-end;
 }
 
 .title {
@@ -25,8 +27,22 @@ footer {
   justify-content: center;
 }
 
+.carouselImage {
+  width: 40vw;
+}
+
+.carouselImage img {
+  width: 40vw;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
 .sliderPhoto {
-  width: 40%;
+  width: 100%;
+  position: relative;
+  left: 75%;
+  border: solid rgb(27, 158, 235);
 }
 
 .hidden {
@@ -35,8 +51,31 @@ footer {
 
 .imageCap {
   font-weight: 400;
+  font-size: 4rem;
+  z-index: 3;
+  position: absolute;
+  bottom: 35%;
+  width: 10%;
+  left: 45%;
+  color: azure;
 }
 
 .link {
   text-transform: uppercase;
+}
+
+.btn {
+  padding: 15px 100px;
+  margin: 10px 4px;
+  color: black;
+  background-color: none;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  border: none;
+}
+
+.btn :hover {
+  border: solid;
 }
