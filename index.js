@@ -29,8 +29,13 @@ function plusImage(){
 function minusImage(){
     slide.src  = images[i];
     caption.innerHTML = num;
-     if (images[i] == 0){
-         i = 3
+     if (i == 3){
+         i = 0;
+         num = 1;
+     }
+     else{
+         i--
+         num--
      }
     }
 
