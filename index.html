@@ -14,30 +14,12 @@
     
     <div class="container">
         <h1 class="title">Slider</h1>
-        <div class="carousel">
-            <div class="active carouselImage">
-        <img class="sliderPhoto" src="images/Flamingo.jpg" alt="flamingo image">
+        <div>
+        <img name="slide" class="sliderPhoto" src="images/Flamingo.jpg" alt="flamingo image">
         <h3 class="imageCap">1</h3>
     </div>
-        
-        <div div class=" hidden carouselImage">
-        <img class="sliderPhoto" src="images/person.jpg" alt="landscape, guy at bar">
-        <h3 class="imageCap ">2</h3>
-    </div>
-
-        <div div class=" hidden carouselImage">
-        <img class=" sliderPhoto" src="images/splash.jpg" alt="image of water droplet splashing">
-        <h3 class="imageCap ">3</h3>
-    </div>
-        <div div class=" hidden carouselImage">
-        <img class=" sliderPhoto" src="images/texture.jpg" alt="landscape, guy at bar">
-        <h3 class="imageCap ">2</h3>
-    </div>
-
-        <button class=" hidden-button btn">prev</button>
-        <button class="active-button btn">next</button>
-    </div>
-
+    <button class=" btn prev hidden" onclick="minusImage()">prev</button>
+    <button class="btn" onclick="plusImage()">next</button>
     </div>
     
 </body>

@@ -1,25 +1,38 @@
-let activeButton = document.querySelector(".active-button")
-let hiddenButton = document.querySelector(".hidden-button")
-let slides = document.querySelectorAll(".carouselImage")
+let i = 1;
+var images = [];
+let caption = document.querySelector(".imageCap");
+let num =2;
+let prevBtn = document.querySelector(".prev");
 
 
 
-hiddenButton.addEventListener("click",() =>{
-   let i = 1;
-    hiddenButton.classList.add("hidden-button")
-    slides[i].classList.add("hidden")
-    i-- 
-    slides[i].classList.remove("hidden")
-} )
+images[0] = "images/Flamingo.jpg"
+images[1] = "images/person.jpg"
+images[2] = "images/splash.jpg"
+images[3] = "images/texture.jpg"
 
-activeButton.addEventListener("click", plusSlide)
 
-function plusSlide(){
-    let i = 0;
-    hiddenButton.classList.remove("hidden-button")
 
-    slides[i].classList.add("hidden")
-    i++
-    slides[i].classList.remove("hidden")
-   
+function plusImage(){
+  slide.src  = images[i];
+  caption.innerHTML = num;
+    if(i<images.length-1) {i++
+        num++
+   }
+    else {
+        i=0;
+        num = 1;
+    }
+    prevBtn.classList.remove("hidden")
 }
+
+function minusImage(){
+    slide.src  = images[i];
+    caption.innerHTML = num;
+     if (images[i] == 0){
+         i = 3
+     }
+    }
+
+   
+
